@@ -6,7 +6,8 @@ function Carousel({ data }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // specifying end point for carousel
-  const end = data.length;
+  const dataLen = data.length;
+  const end = dataLen;
 
   const updateState = (ind) => {
     if (ind < 0) return;

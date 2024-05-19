@@ -6,13 +6,14 @@ function CarouselListItem({
   isActive = false,
   type = "large",
 }) {
-  const baseStyle = ` rounded-lg  ${isImgHeading ? "flex flex-col items-start gap-1" : ""}`;
+  const baseStyle = `  ${isImgHeading ? "flex flex-col items-start gap-1" : ""}`;
   const style = {
     large:
       baseStyle +
-      "min-h-[18rem] min-w-[12rem] md:min-h-[24rem] md:min-w-[14rem]",
+      "min-h-[16rem] min-w-[10rem] sm:min-h-[20rem] sm:min-w-[12rem]  md:min-h-[24rem] md:min-w-[14rem]",
     small:
-      baseStyle + "min-h-[8rem] min-w-[5rem] md:min-h-[10rem] md:min-w-[6rem]",
+      baseStyle +
+      "min-h-[7rem] min-w-[4rem] md:min-h-[9rem] md:min-w-[5rem]  md:min-h-[10rem] md:min-w-[6rem]",
   };
 
   return (
@@ -27,7 +28,7 @@ function CarouselListItem({
       <img
         src={img}
         alt="carouse image"
-        className={`h-full w-full transition-all hover:scale-[1.02] ${isActive ? "scale-[1.05]" : ""}`}
+        className={`h-full w-full rounded-md transition-all hover:scale-[1.02] ${isActive ? "scale-[1.05]" : ""}`}
       />
     </div>
   );

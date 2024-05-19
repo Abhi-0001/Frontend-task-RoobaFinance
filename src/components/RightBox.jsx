@@ -6,26 +6,26 @@ import Button from "../ui/Button";
 
 function RightBox({ isEvent }) {
   return (
-    <div className="relative w-[35%] px-6  py-8 md:w-[40%] ">
+    <div className="relative w-[35%] px-3 py-4 md:w-[40%]  md:px-6 md:py-8 ">
       {/* absolute moving Marquee between both flex boxes */}
       <VerticalMarque />
 
       {/* Top Heading */}
       <div className="w-[50%]">
-        <h2 className="mb-12 text-base font-bold">
+        <h2 className="mb-4 text-base font-bold md:mb-10">
           Explore Your First {isEvent ? "Event" : "Collectible"}
         </h2>
       </div>
 
       {/* Main Heading  */}
-      <h1 className="mb-2 text-3xl font-bold">
+      <h1 className="mb-1 text-3xl font-bold md:mb-2">
         {isEvent ? "Event Name" : "Meta Lives"}
       </h1>
 
       {/* Conditionally rendering items as per collection and event */}
       {isEvent ? (
         // for Event Tab
-        <div className="mb-4 flex gap-2 text-xs">
+        <div className="mb-2 flex gap-2 text-xs md:mb-4">
           {/* icon */}
           <div className="flex items-center justify-between gap-1">
             <GrLocation />
@@ -52,7 +52,7 @@ function RightBox({ isEvent }) {
       <Customers isEvent={isEvent} />
 
       <div
-        className={`${isEvent ? "mt-8 md:mt-16 " : "mt-1 md:mt-2"} flex items-center justify-between`}
+        className={`${isEvent ? "mt-4 md:mt-16 " : "mt-1 md:mt-2"} flex items-center justify-between`}
       >
         {isEvent && (
           <img src="/qr.jpg" alt="QR Code" className="w-16 rounded-lg" />

@@ -41,14 +41,14 @@ function LeftBox({ isEvent, setEvent }) {
         <Button
           type={"secondary"}
           onClick={handleEventClick}
-          customStyle={`${isEvent ? "z-50 bg-gray-700 " : " bg-gray-800 "} px-6 py-0.5  md:px-12  md:py-1.5`}
+          customStyle={`${isEvent ? "z-50 bg-gray-700 " : " bg-gray-800 "} px-8 py-0.5  md:px-12  md:py-1.5`}
         >
           Event
         </Button>
         <Button
           type={"secondary"}
           onClick={handleCollectionClick}
-          customStyle={` ${isEvent ? " bg-gray-800 " : "z-50 bg-gray-700 "}  ml-[-28px]  px-6 py-0.5 md:px-10 md:py-1.5`}
+          customStyle={` ${isEvent ? " bg-gray-800 " : "z-50 bg-gray-700 "}  md:ml-[-28px] ml-[-18px]  px-6 py-0.5 md:px-10 md:py-1.5`}
         >
           Collection
         </Button>

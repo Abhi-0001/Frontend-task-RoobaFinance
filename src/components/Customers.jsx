@@ -12,23 +12,23 @@ function Customers({ isEvent }) {
   return (
     <>
       {isEvent ? (
-        <div className="my-2">
+        <div className="mb-2">
           <h3 className="text-sm">Artist Line Up</h3>
-          <div className="mt-4 flex items-center">
+          <div className="mt-2 flex items-center">
             <img
               src="/customers/customer-1.jpg"
               alt="Artist 1"
-              className="z-0  mr-[-4px] w-[4rem] rounded-lg transition-all hover:scale-[1.05]"
+              className="z-0  mr-[-4px] w-[3rem] rounded-lg transition-all hover:scale-[1.05] md:w-[4rem]"
             />
             <img
               src="/customers/customer-2.jpg"
               alt="Artist 2"
-              className="z-10  mr-[-4px] h-[7rem] w-[7rem] rounded-lg transition-all hover:scale-[1.05]"
+              className="z-10  mr-[-4px] h-[4.5rem] w-[4.5rem] rounded-lg transition-all hover:scale-[1.05] md:h-[7rem] md:w-[7rem]"
             />
             <img
               src="/customers/customer-3.jpg"
               alt="Artist 3"
-              className=" z-0 w-[4rem] rounded-lg transition-all hover:scale-[1.05]"
+              className=" z-0 w-[3rem] rounded-lg transition-all hover:scale-[1.05] md:w-[4rem]"
             />
           </div>
         </div>
